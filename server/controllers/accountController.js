@@ -7,16 +7,16 @@ async function handleTransaction(req, res) {
 
   // starting a transaction
   session.startTransaction();
-  const { amount, toUser, fromUser } = req.body;
+  const { amount, toUser, _id } = req.body;
 
   try {
-    const sender = await User.find({ username: fromUser }).session(session);
-    const receiver = await User.find({ username: toUser }).session(session);
+    const sender = await User.find({ _id: _id }).session(session);
+    const receiver = await User.find({ _id: toUser }).session(session);
 
     if (sender.balance < amount) {
       throw new Error(res.status(403).json({ message: "transaction failed" }));
     }
-    const senderId = sender[0]._id;
+    const senderId = _id;
     const receiverId = receiver[0]._id;
     console.log(sender, receiver, senderId, receiverId);
 
