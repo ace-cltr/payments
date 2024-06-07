@@ -8,7 +8,7 @@ interface InputProps {
 }
 const UsersCard: React.FC<InputProps> = () => {
   return (
-    <div className="flex justify-between items-center border-t-2 border-b-2 border-amber-300 px-4 py-2 mx-16 my-4">
+    <div className="flex justify-between items-center bg-rose-100 shadow-md border-r-2 border-b-2 border-amber-300 px-4 py-2 mx-16 my-1">
       <div className="flex space-x-4">
         <div className="border-2 bg-amber-400 text-xl font-bold cursor-pointer border-amber-500 rounded-full w-14 h-14 flex items-center justify-center">
           U

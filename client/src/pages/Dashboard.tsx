@@ -12,6 +12,8 @@ const Dashboard: React.FC = () => {
         <Balance />
         <UsersSearch />
         <UsersCard />
+        <UsersCard />
+        <UsersCard />
       </div>
     </div>
   );
