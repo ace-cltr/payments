@@ -27,11 +27,19 @@ const LandingPage: React.FC = () => {
           </div>
         </div>
         <p className="font-mono mx-5">
-          Hi there, this Website focuses on how payments work behind the seen in the
-          Backend.<br /> You might have wondered what will happen if I send two people some money at the same time and break the system... wha-t you haven't too bad I'm still gonna tell you why this doesn't happens (usually), There is a concept called <strong className="text-amber-600 text-xl">Sessions</strong>, {" "}<br /> What is a Session anyways? and what makes it so useful in the situation mentioned above
+          Hi there, this Website focuses on how payments work behind the seen in
+          the Backend.
+          <br /> You might have wondered what will happen if I send two people
+          some money at the same time and break the system... wha-t you haven't
+          too bad I'm still gonna tell you why this doesn't happens (usually),
+          There is a concept called{" "}
+          <strong className="text-amber-600 text-xl">Sessions</strong>, <br />{" "}
+          What is a Session anyways? and what makes it so useful in the
+          situation mentioned above
         </p>
         <code className="w-[70-vw] mx-5">
           <CopyBlock
+            language={"text"}
             text={"console.log('hello')"}
             showLineNumbers={true}
             theme={dracula}
