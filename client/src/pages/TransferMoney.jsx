@@ -1,6 +1,6 @@
 import React from "react";
 
-const TransferMoney: React.FC = () => {
+const TransferMoney = () => {
   return <div>hi</div>;
 };
 

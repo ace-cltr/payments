@@ -58,7 +58,7 @@ async function signupUser(req, res) {
   if (newUser) {
     res.status(200).json({
       message: `user ${username} created successfully`,
-      balance: `Current balance : ${account.balance}`,
+      balance: account.balance,
     });
   }
 }

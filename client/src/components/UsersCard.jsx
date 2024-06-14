@@ -1,12 +1,12 @@
 import React, { ReactNode } from "react";
 import { Link } from "react-router-dom";
 
-interface InputProps {
-  placeholder?: string;
-  type?: string;
-  children?: ReactNode;
-}
-const UsersCard: React.FC<InputProps> = () => {
+// interface InputProps {
+//   placeholder?: string;
+//   type?: string;
+//   children?: ReactNode;
+// }
+const UsersCard= () => {
   return (
     <div className="flex justify-between items-center bg-rose-100 shadow-md border-r-2 border-b-2 border-amber-300 px-4 py-2 mx-16 my-1">
       <div className="flex space-x-4">

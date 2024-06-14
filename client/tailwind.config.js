@@ -7,6 +7,6 @@ export default {
         Pacifico: ["Pacifico"],
       },
     },
-    plugins: [],
   },
+  plugins: [],
 };

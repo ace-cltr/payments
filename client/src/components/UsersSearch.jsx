@@ -1,11 +1,11 @@
 import React, { ReactNode } from "react";
 
-interface InputProps {
-  placeholder?: string;
-  type?: string;
-  children?: ReactNode;
-}
-const UsersSearch: React.FC<InputProps> = () => {
+// interface InputProps {
+//   placeholder?: string;
+//   type?: string;
+//   children?: ReactNode;
+// }
+const UsersSearch = () => {
   return (
     <>
       <p className="font-mono my-2 text-xl mx-12">Users:</p>

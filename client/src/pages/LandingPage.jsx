@@ -2,7 +2,7 @@ import React from "react";
 import { CopyBlock, dracula } from "react-code-blocks";
 import { Link } from "react-router-dom";
 
-const LandingPage: React.FC = () => {
+const LandingPage= () => {
   return (
     <div className="bg-rose-50 flex flex-row justify-center items-center min-h-screen">
       <div className="bg-white shadow-lg flex flex-col  rounded-2xl w-[90vw] h-[90vh]">
