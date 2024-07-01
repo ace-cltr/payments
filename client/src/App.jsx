@@ -1,4 +1,4 @@
-import React, { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import SignUp from "./pages/SignUp";
 import Login from "./pages/Login";
@@ -15,12 +15,15 @@ const App = () => {
     username: "",
     password: "",
   });
+  // https://paytm-0kl0.onrender.com
+  const getUserSignupDetails = (data) => {
+    return data
+  };
 
-  // useEffect(()=>{
-  //   const response = await axios.post()
-  // })
+  console.log(getUserSignupDetails);
+
   return (
-    <AppContext.Provider>
+    <AppContext.Provider value={{ getUserSignupDetails, userDetails }}>
       <BrowserRouter>
         <Routes>
           <Route path="*" element={<LandingPage />} />

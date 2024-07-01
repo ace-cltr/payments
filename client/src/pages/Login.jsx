@@ -1,4 +1,3 @@
-import React from "react";
 import BrandLogo from "../components/BrandLogo";
 import Heading from "../components/Heading";
 import InputGroupLogin from "../components/InputGroupLogin";

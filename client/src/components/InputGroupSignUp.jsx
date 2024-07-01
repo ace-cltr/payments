@@ -1,25 +1,24 @@
 import { useContext, useState } from "react";
 import { AppContext } from "../App";
 
-const InputGroup= () => {
-//   const {
-//     firstName,
-//     setFirstName,
-//     lastName,
-//     setLastName,
-//     username,
-//     setUsername,
-//     password,
-//     setPassword,
-//   } = useContext(AppContext);
-
+const InputGroup = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
+  const { getUserSignupDetails } = useContext(AppContext);
+
   function handleSubmit(e) {
     e.preventDefault();
+    if (!(username && password && firstName && lastName)) return;
+    const data = {
+      firstName,
+      lastName,
+      username,
+      password,
+    };
+    getUserSignupDetails(data);
   }
 
   return (
@@ -56,7 +55,10 @@ const InputGroup= () => {
         value={password}
         onChange={(e) => setPassword(e.target.value)}
       />
-      <button className=" bg-amber-400 border-2 border-black rounded px-1 mt-6 mb-3">
+      <button
+        onClick={handleSubmit}
+        className=" bg-amber-400 border-2 border-black rounded px-1 mt-6 mb-3"
+      >
         Sign Up
       </button>
     </form>

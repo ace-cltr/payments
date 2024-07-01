@@ -1,4 +1,4 @@
-import React from "react";
+
 import Navbar from "../components/Navbar";
 import Balance from "../components/Balance";
 import UsersSearch from "../components/UsersSearch";

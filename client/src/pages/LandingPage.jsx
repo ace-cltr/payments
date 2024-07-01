@@ -1,5 +1,5 @@
-import React from "react";
-import { CopyBlock, dracula } from "react-code-blocks";
+
+// import { CopyBlock, dracula } from "react-code-blocks";
 import { Link } from "react-router-dom";
 
 const LandingPage= () => {
@@ -37,14 +37,14 @@ const LandingPage= () => {
           What is a Session anyways? and what makes it so useful in the
           situation mentioned above
         </p>
-        <code className="w-[70-vw] mx-5">
+        {/* <code className="w-[70-vw] mx-5">
           <CopyBlock
             language={"text"}
             text={"console.log('hello')"}
             showLineNumbers={true}
             theme={dracula}
           />
-        </code>
+        </code> */}
       </div>
     </div>
   );
